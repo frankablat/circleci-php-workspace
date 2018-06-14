@@ -69,8 +69,6 @@ RUN curl -s http://getcomposer.org/installer | php && \
     echo "export PATH=${PATH}:/var/www/vendor/bin" >> ~/.bashrc && \
     mv composer.phar /usr/local/bin/composer
 
-RUN composer global require phpunit/phpunit && \
-    echo "export PATH=${PATH}:/root/.composer/vendor/bin" >> ~/.bashrc
 
 # Source the bash
 RUN . ~/.bashrc

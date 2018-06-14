@@ -10,7 +10,7 @@ clean:
 	docker container rm mirzat_php_workspace -f
 
 push:
-	dockder push mirzat/circleci-php-workspace .
+	docker push mirzat/circleci-php-workspace
 
 bash:
 	docker exec -it mirzat_php_workspace bash
