@@ -74,3 +74,5 @@ RUN composer global require phpunit/phpunit && \
 
 # Source the bash
 RUN . ~/.bashrc
+
+RUN echo '--------- Done -----------'
